@@ -8,8 +8,8 @@
 (require json)
 
 
-(define SLACK_WEBHOOK_URL (environment-variables-ref (current-environment-variables) #"SLACK_WEBHOOK_URL"))
-(define ZEROCATER_ID (environment-variables-ref (current-environment-variables)      #"ZEROCATER_ID"))
+(define SLACK_WEBHOOK_URL (getenv "SLACK_WEBHOOK_URL"))
+(define ZEROCATER_ID (getenv      "ZEROCATER_ID"))
 
 (define (format-date date)
   (string-join (list
