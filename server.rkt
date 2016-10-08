@@ -15,7 +15,7 @@
   (string-join (list
     (number->string (date-year date))
     (~a (number->string (date-month date)) #:width 2 #:pad-string "0" #:align 'right)
-    (~a (number->string (- (date-day date) 1)) #:width 2 #:pad-string "0" #:align 'right)
+    (~a (number->string (date-day date)) #:width 2 #:pad-string "0" #:align 'right)
   ) "")
 )
 
